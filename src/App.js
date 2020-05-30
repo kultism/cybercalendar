@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 import axios from 'axios'
 // axios.defaults.baseURL = 'http://167.172.101.116:8000/';
-axios.get('filter/hosts').then((response) => {
-  console.log(response)
-})
+
+
+// console.log(firstItem)
 
 function App() {
+  const [name, setName] = useState()
+  const firstItem = axios.get('filter/hosts').then((response) => {
+    console.log(response)
+    return setName(response.data[0].name)
+  })
   return (
     <div className="App">
       <header className="App-header">
@@ -22,7 +27,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React a
+          {name}
         </a>
       </header>
     </div>
