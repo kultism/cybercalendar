@@ -10,7 +10,7 @@ import axios from 'axios'
 
 function App() {
   const [name, setName] = useState()
-  const firstItem = axios.get('http://167.172.101.116:8000/filter/hosts').then((response) => {
+  const firstItem = axios.get('https://167.172.101.116:8000/filter/hosts').then((response) => {
     console.log(response)
     return setName(response.data[0].name)
   })
