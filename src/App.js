@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import axios from 'axios'
-axios.defaults.baseURL = 'http://167.172.101.116:8000/';
-
+// axios.defaults.baseURL = 'http://167.172.101.116:8000/';
+axios.defaults.baseURL = 'http://cybercalendar.duckdns.org/';
 
 // console.log(firstItem)
 
