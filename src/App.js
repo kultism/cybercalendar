@@ -27,7 +27,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {name}
+          {name || 'test'}
         </a>
       </header>
     </div>
