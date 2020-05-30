@@ -4,7 +4,7 @@ import './App.css';
 
 import axios from 'axios'
 // axios.defaults.baseURL = 'http://167.172.101.116:8000/';
-axios.defaults.baseURL = 'http://cybercalendar.duckdns.org/';
+axios.defaults.baseURL = 'https://cybercalendar.duckdns.org/';
 
 // console.log(firstItem)
 
