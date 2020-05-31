@@ -1,37 +1,13 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react"
+import "antd/dist/antd.css"
 
-import axios from 'axios'
+import axios from "axios"
+import { Calendar } from "./Calendar"
 // axios.defaults.baseURL = 'http://167.172.101.116:8000/';
-axios.defaults.baseURL = 'https://cybercalendar.duckdns.org/';
-
-// console.log(firstItem)
+axios.defaults.baseURL = "https://cybercalendar.duckdns.org/"
 
 function App() {
-  const [name, setName] = useState()
-  const firstItem = axios.get('filter/hosts').then((response) => {
-    console.log(response)
-    return setName(response.data[0].name)
-  })
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {name || 'test'}
-        </a>
-      </header>
-    </div>
-  );
+  return <Calendar />
 }
 
-export default App;
+export default App
