@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.2.5",
     "axios": "^0.21.2",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^5.7.2",
